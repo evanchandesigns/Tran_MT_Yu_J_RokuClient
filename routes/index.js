@@ -13,7 +13,7 @@ router.use('/api', createProxyMiddleware({
 }))
 
 router.get('/', (req, res) => {
-    res.send('Hit the main route.');
+    res.render('index', { message: "Hi there! From handlebars!" })
 })
 
 module.exports = router;
