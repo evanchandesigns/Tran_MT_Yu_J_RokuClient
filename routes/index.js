@@ -16,4 +16,10 @@ router.get('/', (req, res) => {
     res.render('index', { message: "Hi there! From handlebars!" })
 })
 
+// Other routes that you might use
+router.use((req, res) => {
+    res.status(404);
+    res.render("error", { layout: "errorLayout.hbs", errormessage: `You are in the Error Zone! "${req.url}" doesn't exist.` });
+})
+
 module.exports = router;
