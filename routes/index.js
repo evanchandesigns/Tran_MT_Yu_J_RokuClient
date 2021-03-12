@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-// This is where we would add our middleware
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 router.use('/roku', createProxyMiddleware({
@@ -13,20 +12,19 @@ router.use('/roku', createProxyMiddleware({
 }))
 
 router.get('/', (req, res) => {
-    res.render('index',
+    res.render('login',
         {
-            message: "Hi there! From handlebars!"
+            layout: "LoginLayout.hbs",
         })
 })
 
-router.get('/users', (req, res) => {
-    res.render('index',
+router.get('/movies', (req, res) => {
+    res.render('movies',
         {
-            message: "Hi there, users!"
+            layout: "moviesLayout.hbs",
         })
 })
 
-// Other routes that you might use
 router.use((req, res) => {
     res.status(404);
     res.render("error",
