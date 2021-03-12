@@ -1,19 +1,19 @@
-import TheMovieThumb from './components/TheMovieThumbnailComponent.js';
+
 
 (() => {
     const vm = new Vue({
         data: {
-            allMovies: []
+            allItems: []
         },
 
         created: function () {
             console.log('fired');
 
-            fetch('/api/movies')
+            fetch('/roku/items')
                 .then(res => res.json())
                 .then(data => {
                     console.table(data);
-                    this.allMovies = data;
+                    this.allItems = data;
                 })
                 .catch(err => console.error(err));
         },
@@ -23,7 +23,6 @@ import TheMovieThumb from './components/TheMovieThumbnailComponent.js';
         },
 
         components: {
-            moviethumb: TheMovieThumb
         }
     }).$mount("#app");
 })();
