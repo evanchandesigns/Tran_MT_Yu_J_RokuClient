@@ -5,9 +5,10 @@
 }
 
 .appNav{
-    padding: 30px;
+    padding: 50px;
     .navMenu {
         display: flex;
+        padding-top: 30px;
         li {
             padding: 5px;
             font-size: 20px;
@@ -21,7 +22,7 @@
     justify-content: space-around;
 }
 
-.movieThumbnail {
+.movieThumbnail, .tvThumbnail {
     max-width: 300px;
     img {
         border-radius: 8px;
@@ -33,5 +34,23 @@
     .title {
         color: $white;
         padding-top: 10px;
+    }
+}
+
+.musicThumbnail {
+    max-width: 350px;
+    img {
+        border-radius: 8px;
+        max-width: 350px;
+        max-height: 350px;
+        overflow: hidden;
+    }
+    .title {
+        color: $white;
+        padding-top: 10px;
+    }
+    .singer {
+        color: $pink;
+        padding-top: 5px;
     }
 }
