@@ -1,3 +1,15 @@
+img, embed, object, video {
+    max-width: 100%; }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit; }
+
 .hidden {
     display: none;
 }

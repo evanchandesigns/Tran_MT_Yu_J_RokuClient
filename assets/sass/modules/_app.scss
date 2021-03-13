@@ -1,0 +1,37 @@
+.appUI{
+    background-color: $black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.appNav{
+    padding: 30px;
+    .navMenu {
+        display: flex;
+        li {
+            padding: 5px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+}
+
+.thumbnailSection {
+    display: flex;
+    justify-content: space-around;
+}
+
+.movieThumbnail {
+    max-width: 300px;
+    img {
+        border-radius: 8px;
+        max-width: 400px;
+        max-height: 450px;
+        overflow: hidden;
+    }
+
+    .title {
+        color: $white;
+        padding-top: 10px;
+    }
+}
