@@ -1,23 +1,22 @@
 import MoviesContent from "./MoviesContent.js";
 
 export default {
-    name: "MoviesData",
+    name: "ParentsMoviesData",
 
     data() {
         return {
-            allMovies: []
+            allMovies: [],
         }
     },
 
     template: `
-        <div>
+        <section class="thumbnailSection">
             <moviescontent v-for="movie in allMovies" :movie="movie" :key="movie.movies_id"></moviescontent>
-        </div>
+        </section>
     `,
 
     created: function () {
-        console.log("Fired - Fetching Movies Data");
-        fetch('/roku/movies')
+        fetch('/roku/movies-parents')
             .then(res => res.json())
             .then(data => {
                 console.log(data);

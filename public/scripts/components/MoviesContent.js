@@ -4,10 +4,13 @@ export default {
     props: ["movie"],
 
     template: `
-        <img :src='"images/" + movie.movies_thumbnail' alt="movie thumb">
+        <div class="movieThumbnail">
+            <img :src='"images/" + movie.movies_thumbnail' alt="movie thumb">
+            <h3 class="book title">{{ movie.movies_title }}</h3>
+        </div>
     `,
 
-    created: function () {
-        console.log("Fired from the Movies Content");
+    methods: {
+
     }
 }

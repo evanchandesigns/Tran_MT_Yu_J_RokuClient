@@ -14,16 +14,45 @@ router.use('/roku', createProxyMiddleware({
 router.get('/', (req, res) => {
     res.render('login',
         {
-            layout: "LoginLayout.hbs",
+            layout: "loginLayout.hbs",
         })
 })
 
-router.get('/movies', (req, res) => {
-    res.render('movies',
+router.get('/profile', (req, res) => {
+    res.render('profile',
         {
-            layout: "moviesLayout.hbs",
+            layout: "loginLayout.hbs",
         })
 })
+
+router.get('/movies-parents', (req, res) => {
+    res.render('moviesparents',
+        {
+            layout: "appLayout.hbs",
+        })
+})
+
+router.get('/movies-kids', (req, res) => {
+    res.render('movieskids',
+        {
+            layout: "appLayout.hbs",
+        })
+})
+
+router.get('/tvs', (req, res) => {
+    res.render('tvs',
+        {
+            layout: "appLayout.hbs",
+        })
+})
+
+router.get('/music', (req, res) => {
+    res.render('music',
+        {
+            layout: "appLayout.hbs",
+        })
+})
+
 
 router.use((req, res) => {
     res.status(404);

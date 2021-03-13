@@ -1,19 +1,16 @@
-import MoviesData from "./components/MoviesData.js";
+import ParentsMoviesData from "./components/ParentsMoviesData.js";
+import KidsMoviesData from "./components/KidsMoviesData.js";
+import UsersData from "./components/UsersData.js";
 
 (() => {
     const vm = new Vue({
         data: {
         },
 
-        created: function () {
-            console.log("Fired from main.js");
-        },
-
-        methods: {
-        },
-
         components: {
-            "movies-section": MoviesData
-        },
+            "parents-movies-section": ParentsMoviesData,
+            "kids-movies-section": KidsMoviesData,
+            "login-page": UsersData
+        }
     }).$mount("#app");
 })();
