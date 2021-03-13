@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 12, 2021 at 04:41 AM
+-- Generation Time: Mar 13, 2021 at 04:42 AM
 -- Server version: 5.7.31
 -- PHP Version: 7.4.9
 
@@ -142,6 +142,31 @@ INSERT INTO `tbl_tv` (`tv_id`, `tv_title`, `tv_year`, `tv_rating`, `tv_director`
 (8, 'Thundarr the Barbarian', 'TV Series (1980–1981)', '7.5', 'Steve Gerber', 'Henry Corden, Robert Ridgely, Nellie Bellflower', '', 'Thundarr the Barbarian and his companions Ookla the Mok and Princess Ariel wander a devastated future Earth and fight evil wherever they find it.', 'Animation, Adventure, Family', 'TV-Y7 ', '30m', 'thundarr_thumbnail.jpg', 'https://youtu.be/4I9blXQEHyw', 'kids', 'thundarr_cover.jpg'),
 (9, 'Friends', 'TV Series (1994–2004)', '8.9', 'David Crane, Marta Kauffman', 'Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry, David Schwimmer', '', 'Follow the lives of six reckless adults living in Manhattan, as they indulge in adventures which make their lives both troublesome and happening.', 'Comedy, Romance', 'TV-PG', '22m', 'friends_thumbnail.jpg', 'https://youtu.be/ggZkZK-9Pm4', 'parents', 'friends_cover.jpg'),
 (10, 'Johnny Bravo', 'TV Series (1997–2004)', '7.2', 'Van Partible, Jed Spingarn, Butch Hartman', 'Jeff Bennett, Brenda Vaccaro, Mae Whitman', '', 'Johnny Bravo has no shortage of confidence, and he\'s certain that all women want him. With his big hair and tight black clothes, he\'s known for his karate chops, accompanied by the sound of a bullwhip.', 'Animation, Adventure, Comedy', 'TV-Y7', '30m', 'johnny_thumbnail.jpg', 'https://youtu.be/WhtpBCeOvEo', 'kids', 'johnny_cover.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_user`
+--
+
+DROP TABLE IF EXISTS `tbl_user`;
+CREATE TABLE IF NOT EXISTS `tbl_user` (
+  `user_id` smallint(8) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(30) NOT NULL,
+  `user_pass` varchar(30) NOT NULL,
+  `user_parents` varchar(30) NOT NULL,
+  `user_kids` varchar(30) NOT NULL,
+  `parents_img` varchar(80) NOT NULL,
+  `kids_img` varchar(80) NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_user`
+--
+
+INSERT INTO `tbl_user` (`user_id`, `user_name`, `user_pass`, `user_parents`, `user_kids`, `parents_img`, `kids_img`) VALUES
+(1, 'evanchan', 'evanchan', 'Parent Evan', 'Baby Jihee', 'evan.jpg', 'jihee.jpg');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
