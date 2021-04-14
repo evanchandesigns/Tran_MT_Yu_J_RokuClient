@@ -1,15 +1,7 @@
-.bold {
-    font-family: itc-avant-garde-gothic-pro, arial, helvetica, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
+$white: #E8E8E8;
+$pink: #FC4982;
+$gray: #AAAAAA;
+$purple: #6B2CEB;
+$pink-background: rgb(255,181,105);
+$pink-background-gradient: linear-gradient(90deg, rgba(255,181,105,1) 0%, rgba(255,56,127,1) 100%);
 
-.book {
-    font-family: itc-avant-garde-gothic-pro, arial, helvetica, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-$black: #1A191D;
-$white: #FFFFFF;
-$pink: #FF6677;
