@@ -19,7 +19,7 @@ export default {
         return {
             input: {
                 username: "",
-                password: ""
+                password: "",
             }
         }
     },
@@ -44,8 +44,13 @@ export default {
                         if (data.message) {
                             console.warn("User doesn't exist, or something else broke");
                         } else {
-                            data.user = this.input.username;
-                            this.$router.replace({ name: "ProfilesPage" });
+                            window.localStorage.setItem('cacheduser', JSON.stringify(data));
+                            let cacheduser = JSON.parse(localStorage.getItem('cacheduser'));
+                            this.$router.replace({
+                                name: "ProfilesPage",
+                                params: { theuser: cacheduser },
+                            });
+
                         }
                     })
                     .catch((err) => console.log(err));
