@@ -1,14 +1,17 @@
+import Header from "./HeaderComponent.js";
+
 export default {
     name: "ProfilesPage",
 
     data() {
         return {
-            current: JSON.parse(localStorage.getItem('cacheduser')),
+            current: {}
         }
     },
 
     template: `
         <section id="profilesPage">
+            <header-area :edit="edit" @pairData="getData"></header-area>
             <h2>Who's the time traveller today?</h2>
             <div class="eachProfile">
                 <div id="parents" @click="toParents">
@@ -24,12 +27,14 @@ export default {
     `,
 
     created: function () {
-        // if (this.theuser.parents_img == null) {
-        //     this.theuser.parents_img = "placeholder.png";
-        // }
-        // if (this.theuser.kids_img == null) {
-        //     this.theuser.kids_img = "placeholder.png";
-        // }
+        this.edit = true;
+
+        if (this.current.parents_img == null) {
+            this.current.parents_img = "placeholder.png";
+        }
+        if (this.current.kids_img == null) {
+            this.current.kids_img = "placeholder.png";
+        }
     },
 
     methods: {
@@ -43,6 +48,14 @@ export default {
             this.$router.push({
                 name: "KidsHome",
             });
+        },
+
+        getData(data) {
+            this.current = data;
         }
+    },
+
+    components: {
+        "header-area": Header
     }
 }

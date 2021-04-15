@@ -16,8 +16,12 @@ const routes = [
             }
         },
     },
+    { path: "/forget-password" },
+    { path: "/signup" },
     { path: "/profiles", name: "ProfilesPage", component: ProfilesPage, props: true },
+    { path: "/profiles/edit" },
     { path: "/parents-movies", name: "ParentsMovies", component: ParentsMovies, props: true },
+    { path: "/parents", redirect: "/parents-movies" },
     { path: "*", name: "PageNotFound", component: PageNotFound },
 ]
 

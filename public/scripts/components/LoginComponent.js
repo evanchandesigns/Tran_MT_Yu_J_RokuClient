@@ -8,10 +8,18 @@ export default {
             <header-area></header-area>
             <h2>Sign In</h2>
             <form>
-                <input v-model="input.username" type="text" placeholder="Username" required>
-                <input v-model="input.password" type="password" placeholder="Password" required>
+                <div class="inputField">
+                    <img src="images/user.svg" alt="Username Icon">
+                    <input v-model="input.username" type="text" placeholder="Username" required>
+                </div>
+                <div class="inputField">
+                    <img src="images/lock.svg" alt="Password Icon">
+                    <input v-model="input.password" type="password" placeholder="Password" required>
+                </div>
                 <button @click.prevent="signIn()" type="submit" class="pinkButton">Sign In</button>
             </form>
+            <router-link to="/forget-password">Forget Password?</router-link>
+            <router-link to="/signup">Don't have an account? Sign up</router-link>
         </section>
     `,
 
@@ -20,20 +28,20 @@ export default {
             input: {
                 username: "",
                 password: "",
-            }
+            },
         }
     },
 
     methods: {
         signIn() {
             if (this.input.username != "" && this.input.password != "") {
-                let userCreds = JSON.stringify({ username: this.input.username, password: this.input.password });
+                let usercreds = JSON.stringify({ username: this.input.username, password: this.input.password });
 
                 let url = `/ums/login`;
 
                 fetch(url, {
                     method: 'POST',
-                    body: userCreds,
+                    body: usercreds,
                     headers: {
                         'Accept': 'application/json, text/plain, */*',
                         'Content-type': 'application/json'
@@ -45,10 +53,8 @@ export default {
                             console.warn("User doesn't exist, or something else broke");
                         } else {
                             window.localStorage.setItem('cacheduser', JSON.stringify(data));
-                            let cacheduser = JSON.parse(localStorage.getItem('cacheduser'));
                             this.$router.replace({
                                 name: "ProfilesPage",
-                                params: { theuser: cacheduser },
                             });
 
                         }
