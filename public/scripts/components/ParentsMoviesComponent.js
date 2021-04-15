@@ -5,14 +5,26 @@ export default {
 
     template: `
     <section id="parentsMovies">
-        <header-area></header-area>
+        <header-area :settings=settings :parents=parents :reachedhome=reachedhome @click="openMenu()" @pairData="getData"></header-area>
         <h2>Movies</h2>
     </section>
     `,
 
     data() {
         return {
-            current: JSON.parse(localStorage.getItem('cacheduser'))
+            current: {}
+        }
+    },
+
+    created: function () {
+        this.reachedhome = true;
+        this.parents = true;
+        this.settings = true;
+    },
+
+    methods: {
+        getData(data) {
+            this.current = data;
         }
     },
 

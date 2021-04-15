@@ -12,3 +12,5 @@ import router from "./components/Router.js";
 
     }).$mount("#app");
 })();
+
+export default {}
