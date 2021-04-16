@@ -5,7 +5,7 @@ export default {
 
     template: `
         <section id="loginPage">
-            <header-area></header-area>
+            <header-area :purplelogo=purplelogo></header-area>
             <h2>Sign In</h2>
             <form>
                 <div class="inputField">
@@ -30,6 +30,10 @@ export default {
                 password: "",
             },
         }
+    },
+
+    created: function () {
+        this.purplelogo = true;
     },
 
     methods: {

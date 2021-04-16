@@ -1,0 +1,10 @@
+<svg id="Component_36_1" data-name="Component 36 – 1" xmlns="http://www.w3.org/2000/svg" width="18.363" height="18.822" viewBox="0 0 18.363 18.822">
+  <g id="Group_39" data-name="Group 39" transform="translate(-1083.637 -531.589)">
+    <g id="back" transform="translate(1037.523 531.588)">
+      <path id="Chevron_Right" d="M54.388,10.084l8.464,8.461A.95.95,0,0,0,64.2,17.2l-7.793-7.79L64.2,1.622A.951.951,0,1,0,62.852.279L54.387,8.74A.959.959,0,0,0,54.388,10.084Z" transform="translate(0 0)" fill="#fff"/>
+    </g>
+    <g id="back-2" data-name="back" transform="translate(1148.113 550.412) rotate(180)">
+      <path id="Chevron_Right-2" data-name="Chevron_Right" d="M54.388,10.084l8.464,8.461A.95.95,0,0,0,64.2,17.2l-7.793-7.79L64.2,1.622A.951.951,0,1,0,62.852.279L54.387,8.74A.959.959,0,0,0,54.388,10.084Z" transform="translate(0 0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

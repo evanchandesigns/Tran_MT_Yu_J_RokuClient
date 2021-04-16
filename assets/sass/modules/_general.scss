@@ -19,10 +19,15 @@ h1,h2,h3,h4,h5,h6 {
     font-style: normal;
 }
 
-p {
+p,li,a,span, button {
     font-family: itc-avant-garde-gothic-pro, arial, helvetica, sans-serif;
     font-weight: 300;
     font-style: normal;
+}
+
+a,li, button {
+    text-decoration: none;
+    outline: none;
 }
 
 .bold {
@@ -32,7 +37,9 @@ p {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 100%;
+    background: $black;
+    z-index: -2;
 }
 
 .logo {

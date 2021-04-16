@@ -11,7 +11,7 @@ export default {
 
     template: `
         <section id="profilesPage">
-            <header-area :edit="edit" @pairData="getData"></header-area>
+            <header-area :edit="edit" @pairData="getData" :purplelogo=purplelogo></header-area>
             <h2>Who's the time traveller today?</h2>
             <div class="eachProfile">
                 <div id="parents" @click="toParents">
@@ -28,6 +28,7 @@ export default {
 
     created: function () {
         this.edit = true;
+        this.purplelogo = true;
 
         if (this.current.parents_img == null) {
             this.current.parents_img = "placeholder.png";
