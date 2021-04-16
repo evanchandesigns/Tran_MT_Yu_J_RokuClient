@@ -1,6 +1,8 @@
 import LoginPage from "./LoginComponent.js";
 import ProfilesPage from "./ProfilesComponent.js";
 import ParentsMovies from "./ParentsMoviesComponent.js";
+import ParentsTV from "./ParentsTVComponent.js";
+import ParentsMusic from "./ParentsMusicComponent.js";
 import PageNotFound from "./PageNotFoundComponent.js";
 
 let cacheduser = JSON.parse(localStorage.getItem('cacheduser'));
@@ -21,6 +23,8 @@ const routes = [
     { path: "/profiles", name: "ProfilesPage", component: ProfilesPage, props: true },
     { path: "/profiles/edit" },
     { path: "/parents-movies", name: "ParentsMovies", component: ParentsMovies, props: true },
+    { path: "/parents-tv", name: "ParentsTV", component: ParentsTV, props: true },
+    { path: "/parents-music", name: "ParentsMusic", component: ParentsMusic, props: true },
     { path: "/parents", redirect: "/parents-movies" },
     { path: "*", name: "PageNotFound", component: PageNotFound },
 ]
