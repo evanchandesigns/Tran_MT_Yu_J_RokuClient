@@ -45,3 +45,14 @@ a,li, button {
 .logo {
     max-width: 120px;
 }
+
+.slide-enter-active,
+.slide-leave-actice{
+    transition: opacity 1s, transform 1s;
+}
+
+.slide-enter,
+.slide-leave-to {
+    opacity: 0;
+    transform:translateX(-5%);
+}

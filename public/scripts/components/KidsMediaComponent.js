@@ -21,20 +21,20 @@ export default {
         <section class="mediaArea">
             <section class="kidsMovies">
                 <div class="kidsMenuWrapper"><h2>MOVIES</h2><img src="images/kids_movies.svg" alt="Kids Movies"></div>
-                    <movies-thumbnail v-for="movie in allmovies" :movie=movie :key=movie.movies_id></movies-thumbnail>
                 <div class="kidsThumbnailsWrapper">
+                    <movies-thumbnails v-for="movie in allmovies" :movie=movie :key=movie.movies_id></movies-thumbnails>
                 </div>
             </section>
             <section class="kidsTV">
                 <div class="kidsMenuWrapper"><h2>TV</h2><img src="images/kids_tv.svg" alt="Kids TV"></div>
-                    <tv-thumbnail v-for="tv in alltvs" :tv=tv :key=tv.tv_id></tv-thumbnail>
                 <div class="kidsThumbnailsWrapper">
+                     <tv-thumbnails v-for="tv in alltvs" :tv=tv :key=tv.tv_id></tv-thumbnails>
                 </div>
             </section>
             <section class="kidsMusic">
                 <div class="kidsMenuWrapper"><h2>MUSIC</h2><img src="images/kids_music.svg" alt="Kids Movies"></div>
-                    <music-thumbnail v-for="music in allmusic" :music=music :key=music.music_id></music-thumbnail>
                 <div class="kidsThumbnailsWrapper">
+                    <music-thumbnails v-for="music in allmusic" :music=music :key=music.music_id></music-thumbnails>
                 </div>
             </section>
         </section>
@@ -61,24 +61,24 @@ export default {
 
         fetch('/api/kids/movies')
             .then(res => res.json())
-            .then(data => {
-                this.allmovies = data;
-                this.highlight = data[Math.floor(Math.random() * data.length)];
+            .then(movie => {
+                this.allmovies = movie;
+                this.highlight = movie[Math.floor(Math.random() * movie.length)];
                 this.playlist = this.highlight.movies_media.split("embed/").pop();
             })
             .catch((err) => console.error(err));
 
-        fetch('/api/kids/tv')
+        fetch('/api/kids/tvs')
             .then(res => res.json())
-            .then(data => {
-                this.alltvs = data;
+            .then(tv => {
+                this.alltvs = tv;
             })
             .catch((err) => console.error(err));
 
-        fetch('/api/kids/movies')
+        fetch('/api/kids/music')
             .then(res => res.json())
-            .then(data => {
-                this.allmusic = data;
+            .then(music => {
+                this.allmusic = music;
             })
             .catch((err) => console.error(err));
     },
