@@ -20,15 +20,15 @@ export default {
                         </router-link>
                     </div>
                     <button v-if="settings" @click="openSettings()"><img src="images/settings.svg" class="navIcon" alt="Settings Icon"></button>
-                    <button v-if="edit"><router-link to="/profiles/edit"><img src="images/pencil.svg" class="navIcon" alt="Edit Icon"></router-link></button>
+                    <!-- <button v-if="edit"><router-link to="/profiles/edit"><img src="images/pencil.svg" class="navIcon" alt="Edit Icon"></router-link></button> -->
                 </div>
             </nav>
             <div v-if="settingsmenu" class="settingsWrapper">
                 <h3>SETTINGS</h3>
                 <ul>
-                    <li><router-link to="/profiles/edit">Edit Profiles</router-link></li>
+                    <!-- <li><router-link to="/profiles/edit">Edit Profiles</router-link></li>
                     <li><router-link to="">Terms of Use</router-link></li>
-                    <li><router-link to="">Privacy Statement</router-link></li>
+                    <li><router-link to="">Privacy Statement</router-link></li> -->
                     <li @click.prevent=signOut()>Sign Out</li>
                 </ul>
             </div>

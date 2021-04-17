@@ -15,7 +15,7 @@ export default {
         <div  v-if="playvideo" class="mediaBox">
                     <button @click="closeVideo()"><img src="images/close.svg"></button>
                     <iframe :src="highlight.movies_media+'?rel=0&autoplay=1'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                </div>
+        </div>
         <section class="mediaArea">
             <div class="menuNav">
             <img src="images/nav_deco.png" class="navDeco" draggable="false">
@@ -74,10 +74,6 @@ export default {
     methods: {
         getData(data) {
             this.current = data;
-        },
-
-        showAll() {
-
         },
 
         getEra() {

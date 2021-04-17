@@ -76,10 +76,6 @@ export default {
             this.current = data;
         },
 
-        showAll() {
-
-        },
-
         getEra() {
             if (this.eraone == true) {
                 this.url = `/api/parents/tv/eraone`;
