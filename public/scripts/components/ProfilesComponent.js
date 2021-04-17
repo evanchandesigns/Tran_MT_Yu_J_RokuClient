@@ -37,13 +37,6 @@ export default {
         this.settings = true;
         this.edit = true;
         this.purplelogo = true;
-
-        if (this.current.parents_img == null) {
-            this.current.parents_img = "placeholder.png";
-        }
-        if (this.current.kids_img == null) {
-            this.current.kids_img = "placeholder.png";
-        }
     },
 
     methods: {

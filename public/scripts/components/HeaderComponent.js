@@ -50,6 +50,13 @@ export default {
             this.$emit('pairData', this.current);
         }
 
+        if (this.current.parents_img == null) {
+            this.current.parents_img = "placeholder.png";
+        }
+        if (this.current.kids_img == null) {
+            this.current.kids_img = "placeholder.png";
+        }
+
     },
 
     methods: {
