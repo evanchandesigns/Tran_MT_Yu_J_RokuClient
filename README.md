@@ -1,5 +1,6 @@
 # Roku Flashback
 <img src="public/images/profile_bckgrd.png" width="650">
+
 ## Introduction
 Create a streaming app for Roku, using movies, tv shows and music from the 50s-90s
 ## Information
