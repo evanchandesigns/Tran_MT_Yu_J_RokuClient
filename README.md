@@ -1,4 +1,5 @@
 # Roku Flashback
+<img src="public/images/profile_bckgrd.png" width="650">
 ## Introduction
 Create a streaming app for Roku, using movies, tv shows and music from the 50s-90s
 ## Information
@@ -27,3 +28,5 @@ To view the full design in prototyping mode, see below:
 
 ## License
 EvanChan & JiheeYu :copyright: 2021
+
+(Send me an Email: evanchan52.designs@gmail.com if you have further questions :grin:)
