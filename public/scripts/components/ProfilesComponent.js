@@ -11,22 +11,30 @@ export default {
 
     template: `
         <section id="profilesPage">
-            <header-area :edit="edit" @pairData="getData" :purplelogo=purplelogo></header-area>
-            <h2>Who's the time traveller today?</h2>
-            <div class="eachProfile">
-                <div id="parents" @click="toParents">
-                    <img :src="'images/' + current.parents_img" class="profileImage" :alt="current.user_parents">
-                    <h3>{{ current.user_parents }}</h3>
+            <img src="images/profile_bckgrd.png" class="drawnBackground" draggable="false">
+            <header-area :edit="edit" @pairData="getData" :purplelogo=purplelogo :settings=settings></header-area>
+            <div class="profilesMain">
+                <div class="profilesWrapper">
+                <h2>Who's the time traveller today?</h2>
+                <div class="eachProfile">
+                    <div id="parents">
+                        <img :src="'images/' + current.parents_img" class="profileImage" :alt="current.user_parents" @click="toParents">
+                        <h4>Parents Profile</h4>
+                        <h3 @click="toParents">{{ current.user_parents }}</h3>
+                    </div>
+                    <div id="kids">
+                        <img :src="'images/' + current.kids_img" class="profileImage" :alt="current.user_kids" @click="toKids">
+                        <h4>Kids Profile</h4>
+                        <h3 @click="toKids">{{ current.user_kids }}</h3>
+                    </div>
                 </div>
-                <div id="kids" @click="toKids">
-                    <img :src="'images/' + current.kids_img" class="profileImage" :alt="current.user_kids">
-                    <h3>{{ current.user_kids }}</h3>
                 </div>
             </div>
         </section>
     `,
 
     created: function () {
+        this.settings = true;
         this.edit = true;
         this.purplelogo = true;
 
@@ -47,7 +55,7 @@ export default {
 
         toKids() {
             this.$router.push({
-                name: "KidsHome",
+                name: "KidsMedia",
             });
         },
 

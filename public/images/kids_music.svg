@@ -1,0 +1,18 @@
+<svg id="music-note_1_" data-name="music-note (1)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.246" height="47.246" viewBox="0 0 47.246 47.246">
+  <defs>
+    <linearGradient id="linear-gradient" x1="2.851" y1="2.547" x2="3.718" y2="1.666" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb16a"/>
+      <stop offset="1" stop-color="#ff3c7e"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_25" data-name="Group 25" transform="translate(16.61 11.258)">
+    <g id="Group_24" data-name="Group 24">
+      <path id="Path_65" data-name="Path 65" d="M210.087,122.282a1.384,1.384,0,0,0-1.212-.228l-19.563,5.537a1.384,1.384,0,0,0-1.007,1.332v18.739a5.535,5.535,0,1,0,2.768,4.792V135.506l16.794-4.753v11.372a5.535,5.535,0,1,0,2.768,4.792V123.386A1.384,1.384,0,0,0,210.087,122.282Zm-24.55,32.94a2.768,2.768,0,1,1,2.768-2.768A2.771,2.771,0,0,1,185.537,155.222Zm19.563-5.537a2.768,2.768,0,1,1,2.768-2.768A2.771,2.771,0,0,1,205.1,149.685Zm2.768-21.809-16.794,4.753v-2.66l16.794-4.753Z" transform="translate(-180 -122.002)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+  <g id="Group_27" data-name="Group 27" transform="translate(0 0)">
+    <g id="Group_26" data-name="Group 26">
+      <path id="Path_66" data-name="Path 66" d="M19.315,9.826A27.809,27.809,0,0,1,12.437,3.01L10.842.617a1.384,1.384,0,0,0-2.536.768V23.077a5.535,5.535,0,1,0,2.768,4.792V5.85a32.69,32.69,0,0,0,6.6,6.209,4.153,4.153,0,0,1-2.452,7.5,1.384,1.384,0,1,0,0,2.768A6.921,6.921,0,0,0,19.315,9.826ZM5.538,30.637a2.768,2.768,0,1,1,2.768-2.768A2.771,2.771,0,0,1,5.538,30.637Z" transform="translate(-0.001 0)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

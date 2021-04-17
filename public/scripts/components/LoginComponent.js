@@ -5,21 +5,26 @@ export default {
 
     template: `
         <section id="loginPage">
+            <img src="images/login_bckgrd.png" class="drawnBackground" draggable="false">
             <header-area :purplelogo=purplelogo></header-area>
-            <h2>Sign In</h2>
-            <form>
-                <div class="inputField">
-                    <img src="images/user.svg" alt="Username Icon">
-                    <input v-model="input.username" type="text" placeholder="Username" required>
+            <div class="loginWrapper">
+                <div class="formArea">
+                    <h2>Sign In</h2>
+                    <form>
+                        <div class="inputField">
+                            <img src="images/user.svg" alt="Username Icon">
+                            <input v-model="input.username" type="text" placeholder="Username" required>
+                        </div>
+                        <div class="inputField">
+                            <img src="images/lock.svg" alt="Password Icon">
+                            <input v-model="input.password" type="password" placeholder="Password" required>
+                        </div>
+                        <button @click.prevent="signIn()" type="submit" class="pinkButton">Sign In</button>
+                    </form>
+                    <router-link to="">Forget Password?</router-link>
+                    <router-link to="">Don't have an account? Sign up</router-link>
                 </div>
-                <div class="inputField">
-                    <img src="images/lock.svg" alt="Password Icon">
-                    <input v-model="input.password" type="password" placeholder="Password" required>
-                </div>
-                <button @click.prevent="signIn()" type="submit" class="pinkButton">Sign In</button>
-            </form>
-            <router-link to="/forget-password">Forget Password?</router-link>
-            <router-link to="/signup">Don't have an account? Sign up</router-link>
+            </div>
         </section>
     `,
 

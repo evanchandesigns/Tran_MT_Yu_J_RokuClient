@@ -1,0 +1,16 @@
+<svg id="video-player_1_" data-name="video-player (1)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.766" height="47.246" viewBox="0 0 47.766 47.246">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb169"/>
+      <stop offset="1" stop-color="#ff3d7e"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_68" data-name="Path 68" d="M59.179,222.616H20.013A3.478,3.478,0,0,1,16.5,219.1v-24a1.325,1.325,0,0,1,1.4-1.4h43.38a1.325,1.325,0,0,1,1.4,1.4v24A3.458,3.458,0,0,1,59.179,222.616ZM19.312,196.5v22.6a.66.66,0,0,0,.7.7H59.179a.66.66,0,0,0,.7-.7V196.5Z" transform="translate(-14.916 -175.37)" fill="url(#linear-gradient)"/>
+  <g id="Group_29" data-name="Group 29" transform="translate(0 0)">
+    <path id="Path_70" data-name="Path 70" d="M3.127,23.709a1.362,1.362,0,0,1-1.4-1.123L.037,14.026A3.608,3.608,0,0,1,2.849,9.956l38.61-7.169A3.424,3.424,0,0,1,45.528,5.6l1.545,8.7a1.545,1.545,0,0,1-1.123,1.689L3.271,23.709ZM42.015,5.6l-38.61,7.16c-.422,0-.566.422-.566.845l1.267,7.16,39.877-7.3L42.716,6.3A.66.66,0,0,0,42.015,5.6Z" transform="translate(0.002 -2.712)" fill="url(#linear-gradient)"/>
+    <path id="Path_71" data-name="Path 71" d="M337.614,26.589a1.6,1.6,0,0,1-.979-1.823l3.647-11.651a1.463,1.463,0,0,1,2.8.845L339.438,25.61A1.627,1.627,0,0,1,337.614,26.589Z" transform="translate(-304.302 -11.206)" fill="url(#linear-gradient)"/>
+    <path id="Path_72" data-name="Path 72" d="M210.314,49.989a1.6,1.6,0,0,1-.979-1.823l3.647-11.651a1.463,1.463,0,1,1,2.8.845L212.138,49.01A1.7,1.7,0,0,1,210.314,49.989Z" transform="translate(-189.22 -32.36)" fill="url(#linear-gradient)"/>
+    <path id="Path_73" data-name="Path 73" d="M84.514,73.313a1.6,1.6,0,0,1-.979-1.823l3.647-11.651a1.533,1.533,0,0,1,1.823-.979,1.6,1.6,0,0,1,.979,1.823L86.338,72.334A1.7,1.7,0,0,1,84.514,73.313Z" transform="translate(-75.493 -53.438)" fill="url(#linear-gradient)"/>
+    <path id="Path_74" data-name="Path 74" d="M206.7,272.5V261.83a2.818,2.818,0,0,1,4.348-2.39l7.86,5.336a2.887,2.887,0,0,1,0,4.779l-7.86,5.326A2.811,2.811,0,0,1,206.7,272.5Zm2.8-10.672V272.5h0l7.86-5.336Z" transform="translate(-186.862 -234.374)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

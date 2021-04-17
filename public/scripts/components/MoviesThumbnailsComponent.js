@@ -24,7 +24,7 @@ export default {
             <div class="detailsBox movieBox" v-if="showdetails">
             <button @click="closeVideoDetails()" v-if="!playvideo"><img src="images/arrow.svg"><span>BACK</span></button>
                 <div class="movieDetails">
-                    <img :src="'images/movies/' + movie.movies_cover" :alt="movie.movies_title" @click="playVideo()" v-if="!playvideo" id="mediaDetailsCover">
+                    <img :src="'images/movies/' + movie.movies_cover" :alt="movie.movies_title" @click="playVideo()" v-if="!playvideo" id="mediaDetailsCover" draggable="false">
                     <img src="images/play_media.svg" alt="Play" @click="playVideo()" v-if="!playvideo" id="mediaDetailsPlayButton">
                 <div  v-if="playvideo" class="mediaBox">
                     <button @click="closeVideo()"><img src="images/close.svg"></button>
