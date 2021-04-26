@@ -16,7 +16,7 @@ To view the full design in prototyping mode, see below:
 2. Import the database: `db_roku.sql` inside the `database` folder.
 3. Do `npm install` for both repos on two different terminals.
 4. Do `npm run start` on both terminals to start running - Roku Server & Roku Client :exclamation:Roku Client runs on `localhost:5050` - locate to here with your browser to start checking the App out.
-6. Get all the [Music](https://drive.google.com/drive/folders/1D0xsVetqJ905-9Fq5c-R0_fOupRW84ly?usp=sharing) from here for this App to run, download the folder and put it in the `public` folder
+6. Get all the [Music Files](https://drive.google.com/drive/folders/1D0xsVetqJ905-9Fq5c-R0_fOupRW84ly?usp=sharing) from here for this App to run, download the folder and put it in the `public` folder
 5. Testing credentials for current process: `username: test || password: password` OR `username:evanchan || password: evanchan`
 
 ### Further Development Down The Road
